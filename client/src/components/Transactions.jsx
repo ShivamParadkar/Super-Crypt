@@ -62,7 +62,7 @@ const Transactions = () => {
         )}
 
         <div className="flex flex-wrap justify-center items-center mt-10">
-          {transactions.reverse().map((transaction,i)=>(
+          {transactions.slice(0).reverse().map((transaction,i)=>(
             <TransactionCard key={i} {...transaction}/>
           ))}
         </div>
